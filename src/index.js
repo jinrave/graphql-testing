@@ -16,14 +16,7 @@ const root = {
 };
 
 //create mongodb connection
-mongoose.connect('mongodb://103.82.241.18/graphql-testing',
-    {
-        user: 'fitureMONGO',
-        pass: 'fiture123$#',
-        auth: {
-            authdb: 'admin'
-        }
-    }
+mongoose.connect('mongodb://localhost/graphql-testing',
     )
     .then(() => {
         console.log('mongodb connect');
